@@ -15,6 +15,7 @@
 		D03015632601141800048148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03015612601141800048148 /* LaunchScreen.storyboard */; };
 		D030156E2601141900048148 /* BartenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030156D2601141900048148 /* BartenderTests.swift */; };
 		D03015792601141900048148 /* BartenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03015782601141900048148 /* BartenderUITests.swift */; };
+		D03015972601192E00048148 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03015962601192E00048148 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D03015742601141900048148 /* BartenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BartenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03015782601141900048148 /* BartenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BartenderUITests.swift; sourceTree = "<group>"; };
 		D030157A2601141900048148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03015962601192E00048148 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,13 @@
 		D03015552601141300048148 /* Bartender */ = {
 			isa = PBXGroup;
 			children = (
+				D03015952601190500048148 /* Model */,
+				D030158A260118E500048148 /* Controller */,
+				D0301589260118BE00048148 /* Base */,
+				D030158E260118F200048148 /* Util */,
 				D03015562601141300048148 /* AppDelegate.swift */,
 				D03015582601141300048148 /* SceneDelegate.swift */,
-				D030155A2601141300048148 /* ViewController.swift */,
-				D030155C2601141300048148 /* Main.storyboard */,
 				D030155F2601141800048148 /* Assets.xcassets */,
-				D03015612601141800048148 /* LaunchScreen.storyboard */,
 				D03015642601141800048148 /* Info.plist */,
 			);
 			path = Bartender;
@@ -126,6 +129,38 @@
 				D030157A2601141900048148 /* Info.plist */,
 			);
 			path = BartenderUITests;
+			sourceTree = "<group>";
+		};
+		D0301589260118BE00048148 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D030155C2601141300048148 /* Main.storyboard */,
+				D03015612601141800048148 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D030158A260118E500048148 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D030155A2601141300048148 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D030158E260118F200048148 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		D03015952601190500048148 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D03015962601192E00048148 /* Recipe.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +296,7 @@
 				D030155B2601141300048148 /* ViewController.swift in Sources */,
 				D03015572601141300048148 /* AppDelegate.swift in Sources */,
 				D03015592601141300048148 /* SceneDelegate.swift in Sources */,
+				D03015972601192E00048148 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
